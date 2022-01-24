@@ -1,4 +1,4 @@
-# LandmakGroupAssignment
+# Web_And_API-Automation-Framework
 Auto-Test Framework
 Selenium & Java based frontend and Rest-Assure & Java Based backend automation suite utilising the BDD methodologies of Cucumber and Gherkin
 
