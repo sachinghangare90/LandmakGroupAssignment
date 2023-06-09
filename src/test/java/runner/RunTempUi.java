@@ -1,7 +1,7 @@
 package runner;
 
-import cucumber.api.CucumberOptions;
-import cucumber.api.junit.Cucumber;
+import io.cucumber.junit.Cucumber;
+import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
 
@@ -10,13 +10,7 @@ import org.junit.runner.RunWith;
         features = "classpath:features",
         glue = {"stepdef.ui"},
         tags = "@Ui",
-        plugin = {
-                "pretty",
-                "html:target/html/",
-                "json:target/json/file.json",
-        },
-        strict = false,
-        dryRun = false
+        plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
 
 public class RunTempUi {

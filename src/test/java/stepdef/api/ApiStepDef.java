@@ -1,10 +1,8 @@
 package stepdef.api;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+
 import framework.BaseTest;
+import io.cucumber.java.en.*;
 import io.restassured.path.json.JsonPath;
 import io.restassured.specification.RequestSpecification;
 import org.apache.logging.log4j.LogManager;
@@ -26,6 +24,7 @@ public class ApiStepDef extends BaseTest {
 
     @Given("^Add Coins details are here$")
     public void add_Coins_details_are_here(List<String> data) {
+        logger.info("You are Api Step Definition");
         arr.addAll(data);
     }
 

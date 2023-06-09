@@ -1,11 +1,11 @@
 package stepdef.ui;
 
-import cucumber.api.java.en.And;
-import cucumber.api.java.en.Given;
-import cucumber.api.java.en.Then;
-import cucumber.api.java.en.When;
+import io.cucumber.java.en.*;
 import framework.BaseTest;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.junit.Assert;
+import stepdef.api.ApiStepDef;
 import utility.PageActionLibrary;
 import java.util.ArrayList;
 import java.util.List;
@@ -16,12 +16,13 @@ import static org.hamcrest.collection.IsIterableContainingInAnyOrder.containsInA
 
 
 public class HomeStepDef extends BaseTest {
-
+    private static final Logger logger = LogManager.getLogger(HomeStepDef.class);
     List<String> coinsName = new ArrayList<>();
     List<String> rankingCoinsName = new ArrayList<>();
 
     @Given("Open Browser and navigate to")
     public void open_Browser_and_navigate_to() {
+        logger.info("You are Api Step Definition");
         getDriver();
         waitForMilliSeconds(10000);
     }

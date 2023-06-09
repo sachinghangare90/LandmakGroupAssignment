@@ -1,11 +1,14 @@
-@Ui
+
 
 Feature: Frontend Task
+
+  @Ui
     Scenario: Test 1
       Given Open Browser and navigate to
       When Click on View All Button "50"
       Then Verify that hundred result display 50
 
+  @Ui1
     Scenario: Test 2
       Given Open Browser and navigate to website and perform login
       When Select random five cryptocurrencies Add to Watchlist
@@ -15,6 +18,7 @@ Feature: Frontend Task
       Then verify all the options you selected are added to the watchlist
         | Bitcoin | Litecoin | Namecoin | Terracoin | Peercoin |
 
+  @Ui2
     Scenario: Test 3
       Given Open Browser and navigate to
       When Display the dropdown menu on the Cryptocurrencies tab "Cryptocurrencies"

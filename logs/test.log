@@ -1,0 +1,10 @@
+10:13:28.420 [main] INFO  stepdef.ui.HomeStepDef - You are Api Step Definition
+10:13:53.907 [main] INFO  utility.PageActionLibrary - Checking visibility of element://div[@class='sc-16r8icm-0 tu1guj-0 cSTqvK'][normalize-space()='100']~xpath
+10:14:23.989 [main] INFO  utility.PageActionLibrary - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //div[@class='sc-16r8icm-0 tu1guj-0 cSTqvK'][normalize-space()='100'] (tried for 30 second(s) with 500 milliseconds interval)
+10:14:24.005 [main] INFO  utility.PageActionLibrary - Checking visibility of element://button[normalize-space()='50']~xpath
+10:14:54.088 [main] INFO  utility.PageActionLibrary - org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: //button[normalize-space()='50'] (tried for 30 second(s) with 500 milliseconds interval)
+10:14:57.104 [main] INFO  utility.PageActionLibrary - Waiting for 3000 Miliseconds..
+10:15:00.126 [main] INFO  utility.PageActionLibrary - Waiting for 5000 Miliseconds..
+10:15:05.140 [main] INFO  utility.PageActionLibrary - Waiting for 5000 Miliseconds..
+10:15:10.163 [main] INFO  utility.PageActionLibrary - Waiting for 5000 Miliseconds..
+10:15:15.211 [main] INFO  utility.PageActionLibrary - Waiting for 5000 Miliseconds..
